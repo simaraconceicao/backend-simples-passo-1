@@ -22,7 +22,7 @@ const nomes = [
 ]
 
 const listaNomes = router.get('/', (res) => {
-  res.json(nomes)
+  res.send(nomes)
 })
 
 const criaNome = router.post('/', (req, res) => {
